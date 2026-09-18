@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Laptop Tracker — IT Asset Booking &amp; Usage Log</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-icon">💻</span>
+      <div>
+        <h1>Smart Laptop Tracker</h1>
+        <p class="tagline">Automated booking, tracking &amp; usage logging — no more paper</p>
+      </div>
+    </div>
+    <div class="clock">
+      <span id="clock-time">--:--:--</span>
+      <span id="clock-date"></span>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="dashboard" class="tab active">📊 Dashboard</button>
+    <button data-tab="book" class="tab">🗓️ Book Laptops</button>
+    <button data-tab="bookings" class="tab">📋 Bookings <span id="bookings-badge" class="badge-pill hidden"></span></button>
+    <button data-tab="history" class="tab">🕑 Usage History</button>
+    <button data-tab="manage" class="tab">🛠️ Manage Fleet</button>
+  </nav>
+
+  <main id="view" class="view"></main>
+
+  <div id="toasts" class="toasts"></div>
+
+  <datalist id="teachers-list"></datalist>
+  <datalist id="rooms-list"></datalist>
+
+  <script src="/app.js"></script>
+</body>
+</html>
