@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# App data (SQLite DB is auto-created on first run)
+*.db
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
